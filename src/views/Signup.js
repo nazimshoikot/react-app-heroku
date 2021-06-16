@@ -26,15 +26,24 @@ function Signup(){
     
     // triggers the sign up request to the backend
     function sign_up() {
-        let user_info = {
-            username : username,
-            email : email,
-            password : password,
-            password2 : password2
-        };
-        console.log(user_info);
+        // let user_info = {
+        //     username : username,
+        //     email : email,
+        //     password : password,
+        //     password2 : password2
+        // };
+        // console.log(user_info);
 
-        axios.post('/server_app/sign_up', user_info)
+        // axios.post('/server_app/sign_up', user_info)
+        // .then(response => {
+        //     // sucessful response
+        //     console.log("Response: ", response.data);
+        // })
+        // .catch(error => {
+        //     console.error('Error: ', error);
+        // });
+
+        axios.get('https://nazim-django-server.herokuapp.com/hello')
         .then(response => {
             // sucessful response
             console.log("Response: ", response.data);
